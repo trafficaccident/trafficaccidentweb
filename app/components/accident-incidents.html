@@ -1,61 +1,10 @@
-<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/app/libs/polymer/polymer.html">
+<link rel="import" href="/app/components/incident-map.html">
+<link rel="import" href="/app/components/incident-annotations.html">
 
-<accident-incident name="accident-incident">
+<polymer-element name="accident-incidents" noscript>
     <template>
-        <p><center><img src="/app/images/header.png"></p>
-        <div id="mainPage">
-        <p><table>
-            <tr>
-                <td><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.626830082282!2d-73.55136449999998!3d45.5175902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91baea4263a43%3A0x861e153a6088d2cc!2sMaison+de+Radio-Canada!5e0!3m2!1sen!2sca!4v1426345956903"
-                width="600" height="450" frameborder="0" style="border:0"></iframe>
-                
-                <p><button>Archive</button><button>Submit an incident</button></p></td>
-                <td>
-                    <div id="breakingNews">
-                    <p><img
-                    src="http://thumbnails.cbc.ca/maven_legacy/thumbnails/407/572/1621948_10152347095584604_8960146779407029811_n.jpg"
-                    style="width: 50%; height: 50%"></p>
-                    <h1>Breaking news</h1>
-                    <ul>
-                    <li><p><a
-                    href="http://www.cbc.ca/news/canada/montreal/montreal-fire-at-papineau-and-ontario-hampers-commute-1.2895032">Montreal
-                    fire at Papineau and Ontario hampers commute</a></p>
-                    <li><p><a
-                    href="http://www.cbc.ca/news/canada/montreal/mcgill-university-s-royal-victoria-college-building-catches-fire-1.2951643">McGill
-                    University's Royal Victoria College building catches fire</a></p>
-                    <li><p><a
-                    href="http://www.cbc.ca/news/canada/montreal/pig-s-head-found-outside-montreal-police-brotherhood-office-1.2993556">Pig's head found outside Montreal Police Brotherhood office</a></p>
-                    <ul>
-                    </div>
-                </td>
-            </tr>
-            </table></p>
-            </center>
-        </div>
-        <div id="comments">    
-            <h1>What people say about it...</h1>
-            <table>
-                <tr>
-                    <td><img
-                    src="http://i.cbc.ca/1.2895059.1420808922!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/papineau-and-ontario.JPG"></td>
-                    <td>
-                    <h3>On instagram</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper ante sit
-                    amet metus ultrices cursus. Suspendisse ultrices, erat sed venenatis accumsan, quam orci
-                    dapibus purus, sit amet placerat odio magna et quam. Suspendisse potenti.</p>
-                    <h3>On twitter</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper ante sit
-                    amet metus ultrices cursus. Suspendisse ultrices, erat sed venenatis accumsan, quam orci
-                    dapibus purus, sit amet placerat odio magna et quam. Suspendisse potenti.</p>
-                    </td>
-                </tr>
-           </table>
-        </div>
-
-
-
-
-    </center>
+        <incident-map></incident-map>
+        <incident-annotations></incident-annotations>
     </template>
-</accident-incident>
+</polymer-element>

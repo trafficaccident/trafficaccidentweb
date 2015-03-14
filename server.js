@@ -10,7 +10,7 @@ app.set('port', process.env.PORT || 2323, '127.0.0.1');
 app.use('/app', Express.static(__dirname + '/app'));
 
 app.all('/api/*', function(req, res) {
-    proxy.web(req, res, { target: '', secure: false });
+    proxy.web(req, res, { target: 'https://warm-beach-9567.herokuapp.com/', secure: false });
 });
 
 app.get('/form', function(req, res) {
