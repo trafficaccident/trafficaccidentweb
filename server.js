@@ -13,6 +13,12 @@ app.all('/api/*', function(req, res) {
     proxy.web(req, res, { target: '', secure: false });
 });
 
+app.get('/form', function(req, res) {
+	Fs.readFile(__dirname + '/app/form.html', 'utf8', function (error, text) {
+		res.send(text);
+	});
+});
+
 app.get('/*', function(req, res) {
 	Fs.readFile(__dirname + '/app/layout.html', 'utf8', function (error, text) {
 		res.send(text);
