@@ -9,16 +9,22 @@
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.626830082282!2d-73.55136449999998!3d45.5175902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91baea4263a43%3A0x861e153a6088d2cc!2sMaison+de+Radio-Canada!5e0!3m2!1sen!2sca!4v1426345956903"
                             width="600" height="450" frameborder="0" style="border:0"></iframe>
-                
-                        <span><button>Archive</button><button>Submit an incident</button></span>
+                        <p>                
+                            <span><button>Archive</button><button>Submit an incident</button></span>
+                        </p>
                     </td>
                     <td>
                         <div id="breakingNews">
                             <img
                                 src="http://thumbnails.cbc.ca/maven_legacy/thumbnails/407/572/1621948_10152347095584604_8960146779407029811_n.jpg"
-                                style="width: 50%; height: 50%">
-                            <h1>Breaking news</h1>
+                                style="width: 75%; height: 75%">
+                            <h1 class="breakingNewsTitle">Breaking news</h1>
                             <ul>
+                            <!--
+                                <template repeat="{{incident in incidents}}">
+                                    <incident-item item={{incident}}></incident-item>
+                                </template>
+                                -->
                                 <li>
                                     <a href="http://www.cbc.ca/news/canada/montreal/montreal-fire-at-papineau-and-ontario-hampers-commute-1.2895032">
                                         Montreal fire at Papineau and Ontario hampers commute

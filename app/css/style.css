@@ -1,16 +1,40 @@
 body {
     background: #F0F0F0;
+    font-family: "Arial";
+}
+
+a {
+    color: #6699cc;
+}
+
+h1 {
+    text-align: left;
 }
 
 #breakingNews {
-    background: #CA0A0C;
+    background: #E4E4E4;
     padding: 20px;
+}
+
+.breakingNewsTitle {
+    background: #fac304;
+    padding: 10px;
 }
 
 #mainPage {
     background: #FFFFFF;
+    padding: 20px;
+    margin-right: 210px;
+    margin-left: 205px;
+
 }
 
+#comments {
+    background: #E4E4E4;
+    padding: 20px;
+}
 
-
+#socialMedia {
+    padding: 20px;
+}
 
