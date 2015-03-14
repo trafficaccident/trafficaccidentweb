@@ -3,7 +3,12 @@ body {
 }
 
 #breakingNews {
-    background: #E3170D;
+    background: #CA0A0C;
+    padding: 20px;
+}
+
+#mainPage {
+    background: #FFFFFF;
 }
 
 
