@@ -26,7 +26,7 @@ h1 {
 }
 
 #breakingNews {
-    background: #E4E4E4;
+    background: #D6EAEE;
     padding: 20px;
 }
 
@@ -49,5 +49,10 @@ h1 {
 
 #socialMedia {
     padding: 20px;
+}
+
+#newUser {
+    background: #E4E4E4;
+    padding: 10px;
 }
 
