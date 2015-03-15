@@ -72,3 +72,21 @@ h1 {
     padding: 10px;
 }
 
+#archive {
+    background: #5B5B5B;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.archiveYr {
+    width: 40px ;
+}
+
+.archiveMth {
+    width: 20px;
+}
+
+.archiveDay {
+    width: 20px;
+}
+
