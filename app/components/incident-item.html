@@ -1,12 +1,13 @@
 <link rel="import" href="/app/libs/polymer/polymer.html">
 
-<polymer-element name="create-user" attributes="incident">
+<polymer-element name="incident-item" attributes="incident">
     <template>
         <li>
             <a href="{{incident.news_url}}">
                 {{incident.title}}
             </a>
         </li>
+        <link rel="stylesheet" href="/app/css/style.css">
     </template>
     <script>
         Polymer({
