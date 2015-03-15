@@ -1,0 +1,54 @@
+<link rel="import" href="/app/libs/polymer/polymer.html">
+
+<polymer-element name="image-annotated" attributes="annotations src">
+    <template>
+        <style>
+            .annotation {
+                border: double 3px white;
+                position: absolute;
+            }
+            .annotationBody {
+                position: absolute;
+                border: solid 2px black;
+                background-color: white;
+                display: none;
+            }
+        </style>
+        <div style="width: 500px; height: 350px; position: relative; background: url('{{src}}');" on-click="{{onClick}}">
+            <template repeat="{{annotation in annotations}}">
+                <div class="annotation" data-annotation="{{annotation}}"style="top: {{annotation.top}}px; left: {{annotation.left}}px; width: {{annotation.width}}px; height: {{annotation.height}}px;" on-mouseover="{{onMouseOver}}" on-mouseleave="{{onMouseLeave}}"></div>
+                <div class="annotationBody" id={{annotation.id}} style="top: {{annotation.top}}px; left: {{annotation.left}}px; margin-left: {{annotation.width}}px;">
+                    <p>{{annotation.body}}</p>
+                </div>
+            </template>
+        </div>
+    </template>
+    <script>
+        Polymer({
+            onClick: function(inEvent, inDetail, inSender) {
+                console.log('event: ', inEvent);
+                console.log('insender: ', inSender);
+                console.log('rect: ', inSender.offsetTop, inSender.offsetLeft);
+                console.log('mouse: ', inEvent.pageY, inEvent.pageX);
+                console.log('annotaiont: ', inSender.annotation);
+                this.annotations.push({
+                    top: inEvent.pageY - inSender.offsetTop,
+                    left: inEvent.pageX - inSender.offsetLeft,
+                    width: 70,
+                    height: 70,
+                    body: 'I was here!!'
+                });
+                console.log('annotations: ', this.annotations);
+            },
+            onMouseOver: function(inEvent, inDetail, inSender) {
+                console.log('sender: ', $(inSender).parent().children[2]);
+                var body = $(inSender).parent()[0].children[2];
+                body.style.display = 'block';
+            },
+            onMouseLeave: function(inEvent, inDetail, inSender) {
+                var body = $(inSender).parent()[0].children[2];
+                body.style.display = 'none';
+            }
+        });
+    </script>
+</polymer-element>
