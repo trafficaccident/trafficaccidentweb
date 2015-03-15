@@ -7,14 +7,16 @@ var globals = {
         {name: 'Brad 76', picurl: 'http://s3.amazonaws.com/viafoura/user_pictures/2615000000230_27_60x60.jpg',},
     ],
     incidents: [
-        {
-            type: 'fire',
-            title: 'Montreal fire at Papineau and Ontario hampers commute', 
-            news_url: 'http://www.cbc.ca/news/canada/montreal/montreal-fire-at-papineau-and-ontario-hampers-commute-1.2895032',
-            cover_image: 'http://i.cbc.ca/1.2895059.1420808922!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/papineau-and-ontario.JPG',
+        {   
+            type: 'police',
+            title: 'Pig\'s head found outside Montreal Police Brotherhood office', 
+            news_url:
+            'http://www.cbc.ca/news/canada/montreal/cbc-montreal-hackathon-happening-live-1.2994810',
+            cover_image:
+            'http://i.cbc.ca/1.2993558.1426247414!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/pig-head.JPG',
             coordinates: {
-                lat: 45.5257329,
-                lng: -73.5607663,
+                lat: 45.5276266,
+                lng: -73.5856099,
             },
             annotations: [
                 {
@@ -24,10 +26,10 @@ var globals = {
                     nested_comments: [],
                 },
                 {
-                    top: 20,
-                    left: 20,
-                    width: 50,
-                    height: 50,
+                    top: 220,
+                    left: 200,
+                    width: 100,
+                    height: 100,
                     editable: false,
                     user: 'Harper 666',
                     body: 'I laughed when i saw the big tough policeman covering the pigs head (no, not the other policeman). Pick it up and put it in the garbage! It won\'t bite you.\nOh ya, right, have to check for fingerprints.',
@@ -41,6 +43,17 @@ var globals = {
                     ],
                 },
             ],
+        },
+        {
+            type: 'fire',
+            title: 'Montreal fire at Papineau and Ontario hampers commute', 
+            news_url: 'http://www.cbc.ca/news/canada/montreal/montreal-fire-at-papineau-and-ontario-hampers-commute-1.2895032',
+            cover_image: 'http://i.cbc.ca/1.2895059.1420808922!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/papineau-and-ontario.JPG',
+            coordinates: {
+                lat: 45.5257329,
+                lng: -73.5607663,
+            },
+            annotations: [],
         },
         {
             type: 'fire',
@@ -92,22 +105,6 @@ var globals = {
             },
             annotations: []
         },
-         {
-            type: 'police',
-            title: 'Pig\'s head found outside Montreal Police Brotherhood office', 
-            news_url:
-            'http://www.cbc.ca/news/canada/montreal/cbc-montreal-hackathon-happening-live-1.2994810',
-            cover_image:
-            'http://i.cbc.ca/1.2993558.1426247414!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/pig-head.JPG',
-            coordinates: {
-                lat: 45.5276266,
-                lng: -73.5856099,
-            },
-            annotations: []
-        },
-
-
-
     ],
 };
 console.log('globals: ', globals);
