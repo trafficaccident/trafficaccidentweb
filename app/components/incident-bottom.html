@@ -1,4 +1,5 @@
 <link rel="import" href="/app/libs/polymer/polymer.html">
+<link rel="import" href="/app/components/image-annotated.html">
 
 <polymer-element name="incident-bottom">
     <template>
@@ -8,11 +9,11 @@
                 <table>
                     <tr>
                         <td>
-                            <!--<annotated annotations="incidents[0].positionalAnnotations" src="{{incidents[0].cover_image}}"></annotated>-->
+                            <image-annotated annotations="{{incidents[0].positionalAnnotations}}" src="{{incidents[0].cover_image}}"></image-annotated>
                         </td>
                         <td>
                             <div id="socialMedia">
-                                <h3>On instagram</h3>
+                                  <h3>On instagram</h3>
                                     <iframe
                                     src="http://snapwidget.com/in/?u=Y2JjbW9udHJlYWx8aW58MTI1fDN8M3x8bm98NXxub25lfG9uU3RhcnR8eWVzfG5v&ve=150315"
                                     title="Instagram Widget" class="snapwidget-widget"
@@ -21,8 +22,8 @@
                                     height:390px"></iframe>
 
                                 <h3>On twitter</h3>
-                                <script>!function(d,s,id){var
-                                js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                <blockquote class="twitter-tweet" lang="en"><p>Montréal - tractor trailer into ditch eastbound Aut-20 between Av Woodland and Boul St-Charles</p>&mdash; Trafficnet Montreal (@TrafficMontreal) <a href="https://twitter.com/TrafficMontreal/status/576743388365647872">March 14, 2015</a></blockquote>
+                                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                            </div>
                         </td>
