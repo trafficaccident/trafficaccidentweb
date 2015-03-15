@@ -43,7 +43,7 @@ var globals = {
             ],
         },
         {
-            type: 'police',
+            type: 'fire',
             title: 'McGill University\'s Royal Victoria College building catches fire', 
             news_url: 'http://www.cbc.ca/news/canada/montreal/mcgill-university-s-royal-victoria-college-building-catches-fire-1.2951643',
             cover_image: 'http://i.cbc.ca/1.2951662.1423585697!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/mcgill-university-royal-victoria-college.jpg',
@@ -79,6 +79,33 @@ var globals = {
             },
             annotations: []
         },
+        {
+            type: 'bicycle',
+            title: 'Cyclist in downtown Montreal crash', 
+            news_url:
+            'http://www.cbc.ca/news/canada/montreal/cbc-montreal-hackathon-happening-live-1.2994810',
+            cover_image:
+            'http://i.cbc.ca/1.2637814.1399660699!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/cyclist-injured-montreal.jpg',
+            coordinates: {
+                lat: 45.509601,
+                lng: -73.566427,
+            },
+            annotations: []
+        },
+         {
+            type: 'police',
+            title: 'Pig\'s head found outside Montreal Police Brotherhood office', 
+            news_url:
+            'http://www.cbc.ca/news/canada/montreal/cbc-montreal-hackathon-happening-live-1.2994810',
+            cover_image:
+            'http://i.cbc.ca/1.2993558.1426247414!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/pig-head.JPG',
+            coordinates: {
+                lat: 45.5276266,
+                lng: -73.5856099,
+            },
+            annotations: []
+        },
+
 
 
     ],
