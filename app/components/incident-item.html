@@ -6,7 +6,14 @@
             <a href="{{incident.news_url}}">
                 {{incident.title}}
             </a>
-
         </li>
     </template>
+    <script>
+        Polymer({
+            incident: {title: 'hello', news_url: 'dasfdg'},
+            ready: function() {
+                console.log('incident: ', this.incident);
+            },
+        });
+    </script>
 </polymer-element>
