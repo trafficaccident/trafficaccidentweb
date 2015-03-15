@@ -90,5 +90,8 @@ h1 {
     width: 20px;
 }
 
-.instagram {
+#pigPicAlign {
+    vertical-align: top;
+
 }
+
