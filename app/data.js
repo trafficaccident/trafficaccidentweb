@@ -53,6 +53,34 @@ var globals = {
             },
             annotations: [],
         },
+
+        {
+            type: 'protest',
+            title: 'Bill C-51 Day of Action protests', 
+            news_url:
+            'http://www.cbc.ca/news/politics/bill-c-51-day-of-action-protests-denounce-new-policing-powers-1.2994226',
+            cover_image: 'https://pbs.twimg.com/media/CAFE6caW8AALBRn.jpg',
+            coordinates: {
+                lat: 45.5171283,
+                lng: -73.5660947,
+            },
+            annotations: []
+        },
+         {
+            type: 'other',
+            title: 'CBC Montreal Hackathon happening live', 
+            news_url:
+            'http://www.cbc.ca/news/canada/montreal/cbc-montreal-hackathon-happening-live-1.2994810',
+            cover_image:
+            'http://i.cbc.ca/1.2995245.1426341946!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/thomas-hackathon.JPG',
+            coordinates: {
+                lat: 45.516968,
+                lng: -73.552913,
+            },
+            annotations: []
+        },
+
+
     ],
 };
 console.log('globals: ', globals);
