@@ -1,0 +1,22 @@
+<link rel="import" href="/app/libs/polymer/polymer.html">
+
+<polymer-element name="incident-annotation" attributes="incident hello">
+    <template>
+        <p>{{hello}}</p>
+        <img src="{{incident.cover_image}}" id="annotationImg" />
+        <link rel="stylesheet" href="/app/libs/jquery-image-annotate/dist/css/annotate.min.css">
+    </template>
+    <script src="/app/libs/jquery-image-annotate/dist/js/jquery.min.js"></script>
+    <script src="/app/libs/jquery-image-annotate/dist/js/jquery-ui.min.js"></script>
+    <script src="/app/libs/jquery-image-annotate/dist/js/jquery.annotate.min.js"></script>
+    <script>
+        Polymer({
+            ready: function() {
+                console.log(this.incident);
+                $(this).load(function() {
+                    console.log('loaded?');
+                });
+            },
+        });
+    </script>
+</polymer-element>

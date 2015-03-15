@@ -24,15 +24,12 @@ var globals = {
                     nested_comments: [],
                 },
                 {
-                    top: 20,
-                    left: 20,
-                    width: 50,
-                    height: 50,
-                    editable: false,
+                    location: {
+                        x: 20,
+                        y: 20,
+                    },
                     user: 'Harper 666',
                     body: 'I laughed when i saw the big tough policeman covering the pigs head (no, not the other policeman). Pick it up and put it in the garbage! It won\'t bite you.\nOh ya, right, have to check for fingerprints.',
-                    text: 'I laughed when i saw the big tough policeman covering the pigs head (no, not the other policeman). Pick it up and put it in the garbage! It won\'t bite you.\nOh ya, right, have to check for fingerprints.',
-                    id: 'I laughed when i saw the big tough policeman covering the pigs head (no, not the other policeman). Pick it up and put it in the garbage! It won\'t bite you.\nOh ya, right, have to check for fingerprints.',
                     nested_comments: [
                         {
                             user: 'Brad 76',

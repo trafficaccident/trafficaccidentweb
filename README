@@ -1,1 +1,3 @@
 Web / mobile app for viewing information about incidents, both traffic and news on a map and comment on the incident and view articles on theincident.
+
+Notes: Bower is currently out of date with the libs... Currently we're using flipbit's annotation jquery plugin, so until I find the bower repo for it, we're SOL with bower.
