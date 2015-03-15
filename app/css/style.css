@@ -26,13 +26,15 @@ h1 {
 }
 
 #breakingNews {
-    background: #D6EAEE;
     padding: 20px;
 }
 
-.breakingNewsTitle {
-    background: #fac304;
-    padding: 10px;
+#reportIncident {
+     background: #D6EAEE;
+     padding: 10px;
+     margin: 30px;
+     font-size: 13px;
+     font-color: #444444;
 }
 
 #mainPage {

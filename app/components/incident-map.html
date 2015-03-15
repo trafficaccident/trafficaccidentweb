@@ -24,7 +24,12 @@
                                 </google-map-marker>
                             </template>
                         </google-map>
-                        <span><button on-click="{{archive}}">Show the history of incidents</button><button>Submit an incident</button></span>
+                        <p>
+                            Select a timeframe for the map 
+                            <form>
+                                <input type="date" value="2015-03-15">
+                            </form>
+                        </p>
                         <p>
                             Legend
                         </p>
@@ -34,15 +39,32 @@
                     <td>
                         <div id="breakingNews">
                             <img
-                                src="http://thumbnails.cbc.ca/maven_legacy/thumbnails/407/572/1621948_10152347095584604_8960146779407029811_n.jpg"
-                                style="width: 75%; height: 75%">
-                            <h1 class="breakingNewsTitle">Breaking news</h1>
+                                src="/app/images/breaking-news.jpg"
+                                style="width: 100%; height: 75%">
                             <ul>
                                 <template repeat="{{incident in incidents}}">
                                     <incident-item incident={{incident}}></incident-item>
                                 </template>
                             </ul>
                         </div>
+                        <div id="reportIncident">
+                        <h3>Upload your incident</h3>
+                        <p>
+                            Submit your incidents to the CBC.
+                        </p>
+                        <p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="/app/images/upload_now.png">
+                                     </td>
+                                     <td>
+                                        You must be a member of the CBC News Community to upload.
+                                        <a href="FakeLink.com">Sign Up now</a>.
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
                     </td>
                 </tr>
             </table>
