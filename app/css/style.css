@@ -27,6 +27,20 @@ h1 {
 
 #breakingNews {
     padding: 20px;
+    margin: 30px;
+}
+
+#legend {
+    background: #3B3B3B;
+    font-size: 12px;
+    color: #AAAAAA;
+    padding: 20px;
+    margin: 30px;
+
+}
+
+.legendTitle {
+    font-variant: small-caps;
 }
 
 #reportIncident {
@@ -34,7 +48,7 @@ h1 {
      padding: 10px;
      margin: 30px;
      font-size: 13px;
-     font-color: #444444;
+     color: #444444;
 }
 
 #mainPage {
