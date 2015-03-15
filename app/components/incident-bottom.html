@@ -1,6 +1,7 @@
 <link rel="import" href="/app/libs/polymer/polymer.html">
+<link rel="import" href="/app/components/annotated.html">
 
-<polymer-element name="incident-bottom" noscript>
+<polymer-element name="incident-bottom">
     <template>
         <div id="mainPage">
             <div id="comments">    
@@ -8,7 +9,7 @@
                 <table>
                     <tr>
                         <td>
-                            <img src="http://i.cbc.ca/1.2895059.1420808922!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/papineau-and-ontario.JPG">
+                            <annotated annotations="incidents[0].positionalAnnotations" src="{{incidents[0].cover_image}}"></annotated>
                         </td>
                         <td>
                             <div id="socialMedia">
@@ -31,4 +32,17 @@
             </div>
         <link rel="stylesheet" href="/app/css/style.css">
     </template>
+    <script>
+        Polymer({
+            incidents: globals.incidents,
+            ready: function() {
+                this.incidents.forEach(function(element) {
+                    element.positionalAnnotations = element.annotations.filter(function(element) {
+                        return element.top;
+                    });
+                });
+                console.log('positional annotations: ', this.incidents[0].positionalAnnotations);
+            },
+        });
+    </script>
 </polymer-element>
