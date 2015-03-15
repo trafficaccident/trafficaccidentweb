@@ -19,7 +19,7 @@
                         <google-map latitude="45.5257329" longitude="-73.5607663" fitToMarkers>
                             <template repeat="{{incident, i in incidents}}">
                                 <google-map-marker latitude="{{incident.coordinates.lat}}" longitude="{{incident.coordinates.lng}}" icon="/app/images/{{incident.type}}.png" title="{{incident.title}}" click-events="{{true}}" on-google-map-marker-click="{{onGoogleMapMarkerClicked}}">
-                                    <a href="{{incident.news_url}}">{{incident.title}}</a>
+                                    <a href="{{incident.news_url}}" target="_blank">{{incident.title}}</a>
                                     <img src="{{incident.cover_image}}" data-index="{{i}}" class="annotationImg" />
                                 </google-map-marker>
                             </template>

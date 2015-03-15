@@ -3,6 +3,88 @@
 
 <polymer-element name="incident-bottom">
     <template>
+        <style>
+a.twitter-share-button,
+a.twitter-mention-button,
+a.twitter-hashtag-button {
+  display: inline-block;
+  padding: 1px 3px 0 19px;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat;
+  background: url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat,
+              -webkit-linear-gradient(#fff, #dedede);
+  background: url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat,
+              linear-gradient(#fff, #dedede);
+  background-size: 16px 13px, auto auto;
+ 
+  /* Text */
+    font: bold 11px/17px Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  white-space: nowrap;
+}
+ 
+/* Color Highlight for keyboard navigation */
+a.twitter-share-button:focus,
+a.twitter-mention-button:focus,
+a.twitter-hashtag-button:focus {
+  outline: none;
+  border-color: #0089cb;
+}
+blockquote.twitter-tweet {
+  display: inline-block;
+  padding: 16px;
+  margin: 10px 0;
+  max-width: 468px;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  font: bold 14px/18px Helvetica, Arial, sans-serif;
+  color: #000;
+}
+ 
+blockquote.twitter-tweet p {
+  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+  margin: 0 5px 10px 0;
+}
+ 
+blockquote.twitter-tweet a[href^="https://twitter.com"] {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
+}
+
+a.twitter-timeline {
+  /* Buttonish */
+  display: inline-block;
+  padding: 6px 12px 6px 30px;
+  margin: 10px 0;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url(//platform.twitter.com/images/bird.png) 8px 8px no-repeat;
+ 
+  /* Text */
+  font: normal 12px/18px Helvetica, Arial, sans-serif;
+  color: #333;
+  white-space: nowrap;
+}
+ 
+a.twitter-timeline:hover,
+a.twitter-timeline:focus {
+  background-color: #dedede;
+}
+ 
+/* Color Highlight for keyboard navigation */
+ 
+a.twitter-timeline:focus {
+  outline: none;
+  border-color: #0089cb;
+}
+        </style>
         <div id="mainPage">
             <div id="comments">    
                 <h1>What people have to say about it...</h1>
@@ -27,10 +109,17 @@
                                     <img
                                     src="http://iimcb.genesilico.pl/MetaLocGramN/images/base/twitter-logo.png"
                                     style="width: 30%; height: 30%">
-                                    <blockquote class="twitter-tweet" lang="en"><p>Montréal - tractor trailer into ditch eastbound Aut-20 between Av Woodland and Boul St-Charles</p>&mdash; Trafficnet Montreal (@TrafficMontreal) <a href="https://twitter.com/TrafficMontreal/status/576743388365647872">March 14, 2015</a></blockquote>
-                                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 </p>
-
+<div>
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/shaelynrobinson">@shaelynrobinson</a> <a href="https://twitter.com/CBCMontreal">@CBCMontreal</a> <a href="https://twitter.com/McGillU">@McGillU</a> literally walked right past that...</p>&mdash; Misha Prášil (@MishaPrasil) <a href="https://twitter.com/MishaPrasil/status/565253468097896449">February 10, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/CBCNews">@CBCNews</a> <a href="https://twitter.com/sherimarangoni">@sherimarangoni</a> &quot;Who did this to you?&quot;.</p>&mdash; Great Gabbert (@TheGreatGabbert) <a href="https://twitter.com/TheGreatGabbert/status/576481350607245312">March 13, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/CBCMontreal">@CBCMontreal</a> &#10;&#10;&quot;il a fallu une vie à Littré pour édifier son dictionnaire&quot; Duhamel, mais &quot;History of Hockey&quot; c&#39;est vraiment quelque chose.</p>&mdash; Stanisław Miąsik (@SMiasik) <a href="https://twitter.com/SMiasik/status/576826081942118400">March 14, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p>Two hours of hacking left! Go team go! <a href="https://twitter.com/hashtag/hackingCBCMTL?src=hash">#hackingCBCMTL</a> <a href="http://t.co/csybkmXNaS">pic.twitter.com/csybkmXNaS</a></p>&mdash; Sara DuBreuil (@s_dubreuil) <a href="https://twitter.com/s_dubreuil/status/577140001202405376">March 15, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                            </div>
                         </td>
                     </tr>
