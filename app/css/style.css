@@ -14,10 +14,15 @@ a:hover {
 
 ul {
     list-style-type: square;
+    color: #5e7d96;
 }
 
 h1 {
     text-align: left;
+}
+
+#disclaimer {
+    font-size: 9px;
 }
 
 #breakingNews {

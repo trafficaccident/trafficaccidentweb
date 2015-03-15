@@ -23,7 +23,7 @@
             <create-user></create-user>
         </p>
         <p>
-            Location of the incident (please select the location on the map below)
+            Location of the incident (please select location on the map below)
         </p>
         <p>
             <iframe
@@ -55,7 +55,16 @@
             <textarea rows="9" cols="100"></textarea>
         </p>
         <p>
-            Upload a picture <button>Upload</button>
+            Upload a picture <button on-click="{{upload_picture}}">Upload</button>
+        </p>
+        <button>Submit your incident</button>
+        <p>
+        <div id="disclaimer">
+            Note: The CBC does not necessarily endorse any of the views posted. By submitting your
+            incident, you acknowledge that CBC has the right to reproduce, broadcast and publicize those
+            incidents or any part thereof in any manner whatsoever. Please note that incidents are
+            moderated and published according to our submission guidelines.
+        </div>
         </p>
     </div>
 </body>
