@@ -1,7 +1,9 @@
 {
-    "name": "trafficaccidentsweb",
-    "version": "0.0.1",
-    "dependencies": {
-        "polymer": "Polymer/polymer#~0.5.5"
-    }
+  "name": "trafficaccidentsweb",
+  "version": "0.0.1",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5",
+    "jquery": "latest",
+    "google-map": "GoogleWebComponents/google-map#~0.4.2"
+  }
 }

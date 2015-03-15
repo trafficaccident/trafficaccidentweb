@@ -1,0 +1,18 @@
+<link rel="import" href="/app/libs/polymer/polymer.html">
+
+<polymer-element name="create-user">
+    <template>
+        <h1>Create a new user</h1>
+        <form on-submit="{{save}}">
+            <input type="text" name="name" value={{user.user}} />
+            <input type="text" name="picurl" value={{user.picurl}} />
+            <input type="submit" value="add" />
+        </form>
+    </template>
+    <script>
+        Polymer(Polymer.mixin({
+            foo: function(inEvent) {console.log('asdfghj'); inEvent.preventDefault(); },
+            user: {},
+        }, rest));
+    </script>
+</polymer-element>
